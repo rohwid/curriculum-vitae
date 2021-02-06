@@ -6,6 +6,8 @@
 \usepackage{pgf}
 \usepackage{graphicx}
 \usepackage{multibib}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \newcites{book,misc}{{Books},{Others}}
 
 
@@ -66,7 +68,7 @@
 
 \cventry{Nov 2018 -- Nov 2018}{Assistant Trainer}{Digital Talent Scholarship 2018}{Institut Teknologi Sepuluh Nopember \& Ministry of Communication and Information Technology}{Surabaya}{Assisted the main trainer to deliver courses about NLP (Natural Language Processing).}
 
-\cventry{Sept 2017 -- Mar 2019}{Research Assistant}{Telematics Laboratory (B. 201)}{Institut Teknologi Sepuluh Nopember}{Surabaya}{Helped the lecturers to research program and teaching activity, handled network operations and servers in the laboratory.}
+\cventry{Sept 2017 -- Mar 2019}{Research Assistant}{Telematics Laboratory (B. 201)}{Institut Teknologi Sepuluh Nopember}{Surabaya}{Helped the lecturers to research program and teaching activity, handled network operations and servers in the laboratory. In B201, there are a lot of servers such as Local Cloud Server with OpenStack and the others are servers with GPU to train the data for AI research purposes. The other activities, I worked with the lecturers and other researchers to build a website application (\url{http://seasinfo.com/}) to monitors the ships activities. That site was build using React as frontend and Node.js as backend, the ships data collects by IoT with AIS (Automatic identification system).}
 
 \cventry{Sept 2014 -- Aug 2016}{Lead Network Engineer}{PT. Niltava Teknologi Indonesia}{Surabaya}{}{Handled network operations, internet connection troubleshooting, backend program operation and deployment on cloud servers (AWS EC2), setup of local testing server with KVM. Jujucharm from Ubuntu was used to deploy backend program in multiple servers.}
 
@@ -105,15 +107,15 @@
 
 \cvitem{Supervisors 2}{Dr. Supeno Mardi Susiki Nugroho, ST., MT.}
 
-\cvitem{Description}{Created program to generate the RPG player character or enemies game attributes based on \textit{k}-NN and Naive Bayes algorithm then the result was classified with Neural Network Multi-class Classification. This project was created using Python programming language.}
+\cvitem{Description}{Created program to generate the RPG player character or enemy gameplay attributes based on \textit{k}-NN and Naive Bayes algorithm then the result was classified with Neural Network Multi-class Classification. This project was created using Python and it's library.}
 
 
 
 
 \section*{Computer Skills}
-\cvline{Languages}{C/C++, Python, JavaScript, NodeJs, Bash Shell Scripting.}
+\cvline{Languages}{C/C++, Python, JavaScript, Node.js, Bash Shell Scripting.}
 
-\cvline{Artificial Intelligence}{K-NN (Nearest Neighbor), Bayesian Method, Cluster Analysis, Regression Analysis, Classification Analysis, Decision Tree, Genetic Algorithm, Neural Network, Deep Learning.}
+\cvline{AI Algorithms}{K-NN (Nearest Neighbor), Bayesian Method, Cluster Analysis, Regression Analysis, Classification Analysis, Decision Tree, Genetic Algorithm, Neural Network, Deep Learning.}
 
 \cvline{Databases}{MySQL, MongoDB, Redis.}
 
@@ -181,34 +183,36 @@
 
 
 
-\section{Related Projects}
-\cvline{\textbf{Cygnus Gateway}}{Built a computer gateway using Debian, Ubuntu or FreeBSD to provide internet access in Telematics Laboratory (B.201).}
+\section{Related Personal's Projects}
+\cvline{\textbf{RPG Stats Generator}}{Created program to generate the RPG player character or enemy gameplay attributes based on \textit{k}-NN and Naive Bayes algorithm. This program was created using Python and it's library. (URL Link: \url{github.com/rohwid/rpg-stats-generator}).}
 
-\cvline{\textbf{Kirby File Sharing}}{Built a computer sharing server using Ubuntu to provide filesharing system in Telematics Laboratory (B.201) with FTP, Samba and NFS protocol.}
+\cvline{\textbf{RPG Stats NN Multi- class}}{Created program to classify the RPG player character or enemy gameplay attributes that was generated before with \textit{k}-NN and Naive Bayes algorithm. The classification process uses Neural Network with Multi-class Classification. This program was created using Python with TensorFlow and other Python library. (URL Link: \url{github.com/rohwid/rpg-stats-nn-multiclass}).}
 
-\cvline{\textbf{ARvertise-ment}}{An integration of technology in advertisement using Augmented Reality in Android devices. This project was also funded by Ministry of Research, Technology and Higher Education. (URL Link: \url{youtu.be/xcrPnTn4uZU}).}
+\cvline{\textbf{Emotion Recognition}}{Create the emotion detection model with VGG16. The goal was to detect 7 emotions (neutral, happy, sad, surprise, angry, fear and disgusted) but in this project only 5 emotion (neutral, happy, sad, surprise, and angry) which stable enough when detect the people emotions. This program was created using Python with OpenCV, TensorFlow, and other Python library. (URL Link: \url{github.com/rohwid/emotion-recognition}).}
 
-\cvline{\textbf{Nagios}}{Deploy Nagios monitoring tools to monitor hardware and services in many servers.}
+\cvline{\textbf{Auto Nvidia Cuda Driver}}{A script to install NVIDIA drivers, CUDA, CUDNN and NCCL automatically in Linux to make deployment process more faster before do the deep learning training process with GPU. (URL Link: \url{github.com/rohwid/auto-nvidia-cuda-driver}).}
+
+\cvline{\textbf{PACS Server with ORTHANC}}{An assignment from Telemedicine class in master degree, about implementing an PACS (Picture Archiving and Communication System) server used ORTHANC to save DICOM (Digital Imaging and Communications in Medicine) images. The server may also be accessed from DICOM Viewer Software.}
+
+\cvline{\textbf{Stereo Camera Color Tracking}}{Created a program to detect an object with specific colors using HSV filter and built a DIY stereo camera from two ordinary webcams. The program will show the measurement result or distance from the camera to the object after the calibration process to setup the cameras to be used as stereo camera. This project was created used C++ with the OpenCV library. (URL Link: \url{github.com/rohwid/multi-object-color-tracking-stereo}).}
+
+\cvline{\textbf{OpenStack IaaS Deployment Script}}{Built a cloud computing solution to provide IaaS (infrastructure as a Service) in laboratory. Used 5 computer server nodes (1 Controller and 4 Computes) to provide IaaS with the services such as Keystone (Authentication service), Glance (Image service), Nova (Compute service), Cinder (Block storage service), Horizon (User interface). The script for this project was also designed to make the deployment process easier and scalable (if want to add more servers). (URL Link: \url{github.com/rohwid/openstack-iaas-deploy}).}
+
+\cvline{\textbf{EMG identification with K-NN and Naive Bayes}}{Created a program to identify the EMG (Electromyography) as a biometrical feature from the human. The program read and classify the datasets from human EMG and the name as the label. When it’s given an input about human EMG data, the program will be classified who has the EMG data as a result. The EMG data from people that became an input came from the same people in the datasets, it separated about 70\% for training and 30\% for testing. This project was created used MATLAB. (URL Link: \url{github.com/rohwid/emg-classification}).}
+
+\cvline{\textbf{Deblurring Image}}{An assignment from Genetic Algorithm class in Masters degree, about deblurring an image with genetic algorithm implementation. This project was created used MATLAB. (URL Link: \url{github.com/rohwid/debluring-image-genetic-algorithm}).}
+
+\cvline{\textbf{Don't Die!}}{A simple game about saving the dying patient with electrocardiogram. This game was created during Global Game Jam 2017 event alongside my friends. (URL Link: \url{globalgamejam.org/2017/games/dont-die}).}
 
 \cvline{\textbf{Redis Benchmark}}{Benchmark Redis loads with random content using Node.js and bash scripting to measure memory requirement and database down behavior.}
 
 \cvline{\textbf{Database Backup}}{Created an automatic scheduled backup database program or scripts to backup MongoDB and Redis Databases from AWS (Amazon Web Service) to local server using CRON and Bash Shell scripting. This script was also used or edited to support MySQL or MariaDB Database backup.}
 
-\cvline{\textbf{Don't Die!}}{A simple game about saving the dying patient with electrocardiogram. This game was created during Global Game Jam 2017 event alongside my friends. (URL Link: \url{globalgamejam.org/2017/games/dont-die}).}
+\cvline{\textbf{ARvertise-ment}}{An integration of technology in advertisement using Augmented Reality in Android devices. This project was also funded by Ministry of Research, Technology and Higher Education. (URL Link: \url{youtu.be/xcrPnTn4uZU}).}
 
-\cvline{\textbf{Deblurring Image}}{An assignment from Genetic Algorithm class in Masters degree, about deblurring an image with genetic algorithm implementation. This project was created used MATLAB. (URL Link: \url{github.com/rohwid/debluring-image-genetic-algorithm}).}
+\cvline{\textbf{Kirby File Sharing}}{Built a computer sharing server using Ubuntu to provide filesharing system in Telematics Laboratory (B.201) with FTP, Samba and NFS protocol.}
 
-\cvline{\textbf{Stereo Camera Color Tracking}}{Created a program to detect an object with specific colors using HSV filter and built a DIY stereo camera from two ordinary webcams. The program will show the measurement result or distance from the camera to the object after the calibration process to setup the cameras to be used as stereo camera. This project was created used C++ with the OpenCV library. (URL Link: \url{github.com/rohwid/multi-object-color-tracking-stereo}).}
-
-\cvline{\textbf{EMG identification with K-NN and Naive Bayes}}{Created a program to identify the EMG (Electromyography) as a biometrical feature from the human. The program read and classify the datasets from human EMG and the name as the label. When it’s given an input about human EMG data, the program will be classified who has the EMG data as a result. The EMG data from people that became an input came from the same people in the datasets, it separated about 70\% for training and 30\% for testing. This project was created used MATLAB. (URL Link: \url{github.com/rohwid/emg-classification}).}
-
-\cvline{\textbf{OpenStack IaaS Deployment Script}}{Built a cloud computing solution to provide IaaS (infrastructure as a Service) in laboratory. Used 5 computer server nodes (1 Controller and 4 Computes) to provide IaaS with the services such as Keystone (Authentication service), Glance (Image service), Nova (Compute service), Cinder (Block storage service), Horizon (User interface). The script for this project was also designed to make the deployment process easier and scalable (if want to add more servers). (URL Link: \url{github.com/rohwid/openstack-iaas-deploy}).}
-
-\cvline{\textbf{PACS Server with ORTHANC}}{An assignment from Telemedicine class in master degree, about implementing an PACS (Picture Archiving and Communication System) server used ORTHANC to save DICOM (Digital Imaging and Communications in Medicine) images. The server may also be accessed from DICOM Viewer Software.}
-
-\cvline{\textbf{Auto Nvidia Cuda Driver}}{A script to install NVIDIA drivers, CUDA, CUDNN and NCCL automatically in Linux to make deployment process more faster before do the deep learning training process with GPU. (URL Link: \url{github.com/rohwid/auto-nvidia-cuda-driver}).}
-
-\cvline{\textbf{Emotion Recognition}}{Create the emotion detection model with VGG16. The goal was to detect 7 emotions (neutral, happy, sad, surprise, angry, fear and disgusted) but in this project only 5 emotion (neutral, happy, sad, surprise, and angry) which stable enough when detect the people emotions. (URL Link: \url{github.com/rohwid/emotion-recognition}).}
+\cvline{\textbf{Cygnus Gateway}}{Built a computer gateway using Debian, Ubuntu or FreeBSD to provide internet access in Telematics Laboratory (B.201).}
 
 
 
